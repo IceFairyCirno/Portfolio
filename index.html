@@ -3,18 +3,23 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Dicky Ling</title>
-    <meta name="description" content="A scrollable personal website with an icy arctic theme." />
-    
-    <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="assets/Blue_circled_9.png" />
-    <link rel="icon" type="image/png" sizes="24x24" href="assets/Blue_circled_9.png" />
+    <title>Dicky Ling | IceFairyCirno</title>
+    <meta name="description" content="Dicky Ling (IceFairyCirno) — Year 4 Computer Science student at HKU. Flutter, Python, and projects from Hong Kong." />
+    <meta name="author" content="Dicky Ling" />
+    <meta property="og:title" content="Dicky Ling | IceFairyCirno" />
+    <meta property="og:description" content="Year 4 CS student at HKU. Mobile &amp; indie game developer — LogFit, GForm, The Island, and more." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://icefairycirno.github.io/My-Website/" />
+    <meta property="og:image" content="https://icefairycirno.github.io/My-Website/assets/profile_pic.png" />
+    <meta name="twitter:card" content="summary" />
+
+    <link rel="icon" type="image/png" href="assets/Blue_circled_9.png" />
     <link rel="apple-touch-icon" href="assets/Blue_circled_9.png" />
-    
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -22,9 +27,7 @@
     <div class="aurora" aria-hidden="true"></div>
     <header class="site-header" id="header">
       <div class="container header-inner">
-        <a class="brand" href="#home" aria-label="Go to home">
-          IceFairyCirno
-        </a>
+        <a class="brand" href="#home" aria-label="Go to home">IceFairyCirno</a>
         <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
         <nav class="site-nav" id="siteNav">
           <ul>
@@ -33,7 +36,7 @@
             <li><a href="#projects" class="nav-link">Projects</a></li>
             <li><a href="#education" class="nav-link">Edu/Exp</a></li>
             <li><a href="#contact" class="nav-link">Contact</a></li>
-            <li><a href="#" id="downloadCv">Download My CV</a></li>
+            <li><a href="#contact">Request My CV</a></li>
           </ul>
         </nav>
       </div>
@@ -44,36 +47,40 @@
         <div class="container hero-inner">
           <div class="hero-content">
             <h1 class="hero-title">I am IceFairyCirno</h1>
+            <p class="hero-tagline">
+              Mobile developer (<span class="highlight">Flutter</span>) · Indie game developer (<span class="highlight">Unity</span>) · Shipped apps on the App Store
+            </p>
             <p class="hero-subtitle">
-              I am a <span class="highlight">CS</span> student and a "Developer" from Hong Kong who 
+              I am a <span class="highlight">Year 4 CS</span> student and a developer from Hong Kong who
               loves to code interesting and useful stuff in my free time.
-              I am also into <span class="highlight">gaming</span> and <span class="highlight">anime</span>, 
-              and <span class="highlight">make friends</span> with people from all over the world.
+              I am also an <span class="highlight">indie game</span> developer — I build games with Unity,
+              including course work like <span class="highlight">The Island</span> that was selected for the final-day presentation.
+              Outside of coding, I am into gaming and anime, and enjoy making friends with people from all over the world.
             </p>
             <div class="hero-cta">
               <a href="https://discord.com/users/del_luna" class="social-btn discord" target="_blank" rel="noopener noreferrer" aria-label="Discord" title="del_luna">
-                <i class='bx bxl-discord-alt'></i>
+                <i class="bx bxl-discord-alt"></i>
               </a>
-              <a href="https://github.com/IceFairyCirno" class="social-btn github" target="_blank" rel="noopener noreferrer" aria-label="GitHub" title="IceFairy_Cirno">
-                <i class='bx bxl-github'></i>
+              <a href="https://github.com/IceFairyCirno" class="social-btn github" target="_blank" rel="noopener noreferrer" aria-label="GitHub" title="IceFairyCirno">
+                <i class="bx bxl-github"></i>
               </a>
-              <a href="https://www.linkedin.com/in/chun-ho-ling-0aa909336" class="social-btn linkedin" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn", title="Chun Ho Ling">
-                <i class='bx bxl-linkedin'></i>
+              <a href="https://www.linkedin.com/in/chun-ho-ling-0aa909336" class="social-btn linkedin" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" title="Chun Ho Ling">
+                <i class="bx bxl-linkedin"></i>
               </a>
               <a href="https://www.instagram.com/ch.l_1026" class="social-btn instagram" target="_blank" rel="noopener noreferrer" aria-label="Instagram" title="ch.l_1026">
-                <i class='bx bxl-instagram'></i>
+                <i class="bx bxl-instagram"></i>
               </a>
             </div>
           </div>
           <div class="hero-photo">
             <div class="photo-carousel">
-              <img id="profilePhoto" src="assets/profile_pic.png" alt="Your portrait" title="⑨⑨⑨⑨⑨⑨⑨⑨⑨"/>
+              <img id="profilePhoto" src="assets/profile_pic.png" alt="Portrait of Dicky Ling" />
               <button class="carousel-btn prev-btn" aria-label="Previous photo">‹</button>
               <button class="carousel-btn next-btn" aria-label="Next photo">›</button>
-              <div class="carousel-indicators">
-                <span class="indicator active" data-index="0"></span>
-                <span class="indicator" data-index="1"></span>
-                <span class="indicator" data-index="2"></span>
+              <div class="carousel-indicators" aria-label="Profile photo indicators">
+                <button type="button" class="indicator active" data-index="0" aria-label="Show photo 1" aria-current="true"></button>
+                <button type="button" class="indicator" data-index="1" aria-label="Show photo 2" aria-current="false"></button>
+                <button type="button" class="indicator" data-index="2" aria-label="Show photo 3" aria-current="false"></button>
               </div>
             </div>
           </div>
@@ -87,25 +94,29 @@
             <div class="vision-card glass">
               <h3>My Vision</h3>
               <p>
-                I am open to learn anything in any field as long as it is <span class="highlight">interesting</span> and <span class="highlight">useful</span>. 
-                I consider <span class="highlight">AI</span> as a <span class="highlight">Tool</span> to help me in my learning process, and I am open to use it in my projects 
-                with extra caution in <span class="highlight">data privacy</span> and <span class="highlight">security</span>.
-                But that doesn't mean I will rely on it too much, I will still learn the basics before using it and try to understand how it works.
+                I am open to learn anything in any field as long as it is interesting and useful.
+                I treat <span class="highlight">AI</span> as a tool in my learning process, and use it in projects
+                with care around <span class="highlight">data privacy</span> and security —
+                without skipping the basics or understanding how things work.
               </p>
             </div>
             <div class="vision-card glass">
               <h3>Skills</h3>
+              <p class="skill-label">Primary</p>
               <ul class="tags">
-                <li><i class='bx bxl-python'></i> Python</li>
-                <li><i class='bx bxl-html5'></i> HTML</li>
-                <li><i class='bx bxl-css3'></i> CSS</li>
-                <li><i class='bx bxl-javascript'></i> JavaScript</li>
-                <li><i class='bx bxl-java'></i> Java</li>
-                <li><i class='bx bxl-c-plus-plus'></i> C++</li>
-                <li><i class='bx bxl-android'></i> Android Studio</li>
-                <li><i class='bx bx-code' ></i> Kotlin</li>
-                <li><i class='bx bx-code-curly'></i> JSON</li>
-                <li><i class='bx bx-code-alt'></i> XML</li>
+                <li><i class="bx bxl-flutter"></i> Flutter</li>
+                <li><i class="bx bx-code"></i> Dart</li>
+                <li><i class="bx bxl-firebase"></i> Firebase</li>
+                <li><i class="bx bxl-python"></i> Python</li>
+                <li><i class="bx bx-code-alt"></i> C#</li>
+                <li><i class="bx bxl-unity"></i> Unity</li>
+              </ul>
+              <p class="skill-label">Familiar</p>
+              <ul class="tags">
+                <li><i class="bx bxl-javascript"></i> JavaScript</li>
+                <li><i class="bx bxl-html5"></i> HTML / CSS</li>
+                <li><i class="bx bxl-java"></i> Java</li>
+                <li><i class="bx bxl-c-plus-plus"></i> C++</li>
               </ul>
             </div>
           </div>
@@ -116,26 +127,40 @@
         <div class="container">
           <h2 class="section-title">Projects</h2>
           <div class="projects-grid">
-            <article class="project-card glass" style="--project-bg: url('assets/touhou_game_clone_cover2.jpg');">
-              <div class="crystal-corner top-left"></div>
-              <div class="crystal-corner bottom-right"></div>
-              <h3>Touhou game clone</h3>
-              <p>A game clone of Touhou Project with <span class="highlight">Pygame</span>, a "popular" bullet hell game series.</p>
-              <a href="https://github.com/IceFairyCirno/Touhou10" class="link">Explore</a>
-            </article>
-            <article class="project-card glass" style="--project-bg: url('assets/chatbot_cover.webp');">
-              <div class="crystal-corner top-left"></div>
-              <div class="crystal-corner bottom-right"></div>
-              <h3>AI-powered Assistant</h3>
-              <p>A Chatbot with <span class="highlight">Python</span> linked to <span class="highlight">LLM</span> that can voice controlled and help with tasks.</p>
-              <a href="#" class="link">In progress</a>
-            </article>
             <article class="project-card glass" style="--project-bg: url('assets/fitness_cover.jpg');">
-              <div class="crystal-corner top-left"></div>
-              <div class="crystal-corner bottom-right"></div>
-              <h3>Fitness Tracker</h3>
-              <p>An <span class="highlight">Native Android App</span> that tracks my fitness progress and helps me stay fit.</p>
-              <a href="https://github.com/IceFairyCirno/BornAgain" class="link">Explore</a>
+              <h3>LogFit</h3>
+              <p>
+                Fitness app with social features, cloud storage, and progress tracking.
+                Built with <span class="highlight">Flutter</span> + <span class="highlight">Firebase</span>; launching on Google Play.
+              </p>
+              <span class="link link-soon" aria-disabled="true">Coming soon on Google Play</span>
+              <a href="https://icefairycirno.github.io/LogFit-Legal/" class="link link-secondary" target="_blank" rel="noopener noreferrer">Privacy &amp; Terms</a>
+            </article>
+            <article class="project-card glass" style="--project-bg: url('assets/gform_cover.webp');">
+              <h3>GForm</h3>
+              <p>
+                Google Forms–style mobile app designed and built <span class="highlight">from scratch solo</span>.
+                Shipped to the <span class="highlight">App Store</span> while at Zoomob; end-to-end Flutter ownership.
+              </p>
+              <span class="link link-soon" aria-disabled="true">Available on the App Store</span>
+            </article>
+            <article class="project-card glass" style="--project-bg: url('https://img.youtube.com/vi/4yoCaGswmMk/hqdefault.jpg');">
+              <h3>The Island</h3>
+              <p>
+                Indie game built with <span class="highlight">Unity</span> and <span class="highlight">C#</span> as a school course project —
+                selected to present on the final day of the course.
+              </p>
+              <a href="https://youtu.be/4yoCaGswmMk" class="link" target="_blank" rel="noopener noreferrer">Watch Trailer</a>
+            </article>
+            <article class="project-card glass" style="--project-bg: url('assets/touhou_game_clone_cover2.jpg');">
+              <h3>Touhou game clone</h3>
+              <p>Bullet-hell game clone built with <span class="highlight">Pygame</span> — gameplay systems, collision, and stage flow.</p>
+              <a href="https://github.com/IceFairyCirno/Touhou10" class="link" target="_blank" rel="noopener noreferrer">Explore</a>
+            </article>
+            <article class="project-card glass" style="--project-bg: url('assets/discord_cover.jpg');">
+              <h3>Discord Bot</h3>
+              <p><span class="highlight">Python</span> bot for community automation and server utilities on my own Discord.</p>
+              <a href="https://github.com/IceFairyCirno/Discord-Bot" class="link" target="_blank" rel="noopener noreferrer">Explore</a>
             </article>
           </div>
         </div>
@@ -158,30 +183,48 @@
                 <div class="timeline-item">
                   <div class="dot"></div>
                   <div class="content glass">
-                    <h3>Chemistry & Physics & Calculus</h3>
-                    <p>AOGHSS - 2017 - 2023</p>
+                    <h3>Secondary Education</h3>
+                    <p>AOGHSS — 2017 – 2023</p>
                   </div>
                 </div>
               </div>
             </div>
-            
+
             <div class="experience-section">
               <h3 class="subsection-title">Experience</h3>
               <div class="timeline">
                 <div class="timeline-item">
                   <div class="dot"></div>
                   <div class="content glass">
+                    <h3>Mobile App Developer</h3>
+                    <p>Zoomob Limited — Jun 2026 – Now</p>
+                    <p>
+                      Own mobile delivery with <span class="highlight">Flutter</span> and <span class="highlight">AI</span>-assisted features.
+                      Designed and shipped <span class="highlight">GForm</span> solo from scratch to the App Store,
+                      and contributed to several other production apps on the team.
+                    </p>
+                  </div>
+                </div>
+                <div class="timeline-item">
+                  <div class="dot"></div>
+                  <div class="content glass">
                     <h3>Summer Programmer Trainee</h3>
-                    <p>Wafer System Ltd. - June 2025 – Aug 2025</p>
-                    <p>Took part in the LCSD Smart Library System team, learning practial <span class="highlight">Web Development</span> skills</p>
+                    <p>Wafer System Ltd. — Jun 2025 – Aug 2025</p>
+                    <p>
+                      Contributed to the LCSD Smart Library System as part of the delivery team,
+                      building and iterating on <span class="highlight">web</span> features used in a live public-sector product.
+                    </p>
                   </div>
                 </div>
                 <div class="timeline-item">
                   <div class="dot"></div>
                   <div class="content glass">
                     <h3>Student Teaching Assistant</h3>
-                    <p>HKU - Sep 2024 – Dec 2024</p>
-                    <p>Provide <span class="highlight">Tutorials</span> for Python Introduction Course (ENGG1330) to Year1 students for a semester</p>
+                    <p>HKU — Sep 2024 – Dec 2024</p>
+                    <p>
+                      Led weekly <span class="highlight">Python</span> tutorials for ENGG1330 (Year 1),
+                      supporting lab work, clarifying core concepts, and helping students debug coursework.
+                    </p>
                   </div>
                 </div>
               </div>
@@ -193,20 +236,25 @@
       <section id="contact" class="section">
         <div class="container">
           <h2 class="section-title">Contact</h2>
-          <form class="contact-form glass" action="https://formspree.io/f/xyzpvnon" method="POST">
+          <p class="contact-lead">
+            Prefer email?
+            <a class="link" href="mailto:dicky.ling1026@gmail.com">dicky.ling1026@gmail.com</a>
+          </p>
+          <form class="contact-form glass" action="https://formspree.io/f/xyzpvnon" method="POST" novalidate>
             <div class="form-row">
               <label for="name">Name</label>
-              <input id="name" name="name" type="text" placeholder="Your name" required />
+              <input id="name" name="name" type="text" placeholder="Your name" required autocomplete="name" />
             </div>
             <div class="form-row">
               <label for="email">Email</label>
-              <input id="email" name="email" type="email" placeholder="you@example.com" required />
+              <input id="email" name="email" type="email" placeholder="you@example.com" required autocomplete="email" />
             </div>
             <div class="form-row">
               <label for="message">Message</label>
-              <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..."></textarea>
+              <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
             </div>
             <button type="submit" class="btn btn-primary">Send Message</button>
+            <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
           </form>
         </div>
       </section>
@@ -214,18 +262,10 @@
 
     <footer class="site-footer">
       <div class="container">
-        <p>⑨ <span id="year"></span> Dicky Ling. All rights reserved. Funky❄</p>
-        <div class="footer-crystals">
-          <span class="crystal">❄</span>
-          <span class="crystal">❅</span>
-          <span class="crystal">❆</span>
-        </div>
+        <p><span id="year"></span> Dicky Ling. All rights reserved.</p>
       </div>
     </footer>
 
     <script src="index.js"></script>
   </body>
-  </html>
-
-
-
+</html>
