@@ -1,6 +1,6 @@
 # IceFairyCirno — Personal Portfolio
 
-Arctic-themed personal website for **Dicky Ling** (IceFairyCirno) — Year 4 CS student at HKU, mobile & indie game developer.
+Portfolio for myself — a Year 4 CS student at HKU, mobile & indie game developer.
 
 **Live site:** [https://icefairycirno.github.io/Portfolio/](https://icefairycirno.github.io/Portfolio/)
 
