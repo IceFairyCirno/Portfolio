@@ -2,7 +2,7 @@
 
 Arctic-themed personal website for **Dicky Ling** (IceFairyCirno) — Year 4 CS student at HKU, mobile & indie game developer.
 
-**Live site:** [icefairycirno.github.io/My-Website](https://icefairycirno.github.io/My-Website/)
+**Live site:** [https://icefairycirno.github.io/Portfolio/](https://icefairycirno.github.io/Portfolio/)
 
 ## Features
 
