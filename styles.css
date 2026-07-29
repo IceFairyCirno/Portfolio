@@ -624,6 +624,20 @@ textarea:focus {
   background: linear-gradient(0deg, rgba(2, 12, 22, 0.6), rgba(2, 12, 22, 0.2));
 }
 
+.footer-inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 8px 24px;
+}
+
+.footer-updated {
+  margin: 0;
+  font-size: 0.9em;
+  opacity: 0.85;
+}
+
 .highlight {
   color: var(--primary);
   font-weight: 600;

@@ -56,6 +56,21 @@
 
   document.getElementById('year').textContent = String(new Date().getFullYear());
 
+  // ---- Footer: last GitHub push (month + year) ----
+  const updatedAtEl = document.getElementById('updatedAt');
+  const formatMonthYear = (date) =>
+    date.toLocaleDateString('en-US', { month: 'long', year: 'numeric' });
+
+  const setUpdatedAt = (date) => {
+    updatedAtEl.dateTime = date.toISOString().slice(0, 7);
+    updatedAtEl.textContent = formatMonthYear(date);
+  };
+
+  fetch('https://api.github.com/repos/IceFairyCirno/My-Website')
+    .then((res) => (res.ok ? res.json() : Promise.reject(res)))
+    .then((repo) => setUpdatedAt(new Date(repo.pushed_at)))
+    .catch(() => setUpdatedAt(new Date()));
+
   // ---- Photo carousel ----
   const profilePhoto = document.getElementById('profilePhoto');
   const prevBtn = document.querySelector('.prev-btn');
