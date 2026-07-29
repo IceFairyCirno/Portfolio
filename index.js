@@ -58,18 +58,38 @@
 
   // ---- Footer: last GitHub push (month + year) ----
   const updatedAtEl = document.getElementById('updatedAt');
-  const formatMonthYear = (date) =>
-    date.toLocaleDateString('en-US', { month: 'long', year: 'numeric' });
-
-  const setUpdatedAt = (date) => {
-    updatedAtEl.dateTime = date.toISOString().slice(0, 7);
-    updatedAtEl.textContent = formatMonthYear(date);
+  const formatMonthYear = (date) => {
+    if (!(date instanceof Date) || Number.isNaN(date.getTime())) return '';
+    return date.toLocaleDateString('en-US', { month: 'long', year: 'numeric' });
   };
 
-  fetch('https://api.github.com/repos/IceFairyCirno/My-Website')
-    .then((res) => (res.ok ? res.json() : Promise.reject(res)))
-    .then((repo) => setUpdatedAt(new Date(repo.pushed_at)))
-    .catch(() => setUpdatedAt(new Date()));
+  const setUpdatedAt = (date) => {
+    if (!updatedAtEl) return;
+    const label = formatMonthYear(date);
+    if (!label) return;
+    updatedAtEl.dateTime = `${date.getUTCFullYear()}-${String(date.getUTCMonth() + 1).padStart(2, '0')}`;
+    updatedAtEl.textContent = label;
+  };
+
+  const loadGitHubUpdatedAt = async () => {
+    const controller = new AbortController();
+    const timeoutId = setTimeout(() => controller.abort(), 4000);
+    try {
+      const res = await fetch('https://api.github.com/repos/IceFairyCirno/My-Website', {
+        headers: { Accept: 'application/vnd.github+json' },
+        signal: controller.signal,
+      });
+      if (!res.ok) return;
+      const repo = await res.json();
+      if (repo?.pushed_at) setUpdatedAt(new Date(repo.pushed_at));
+    } catch {
+      // Keep the HTML fallback date if GitHub is unreachable.
+    } finally {
+      clearTimeout(timeoutId);
+    }
+  };
+
+  loadGitHubUpdatedAt();
 
   // ---- Photo carousel ----
   const profilePhoto = document.getElementById('profilePhoto');
